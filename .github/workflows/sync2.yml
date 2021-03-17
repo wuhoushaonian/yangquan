@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml    建立一个分支，把此文件放进分支的AC里
-name: sync-6Svip120apk69-gitee_q8qsTAUA_cThxc1RBVUE
+name: sync-age174
 on:
   schedule:
     - cron: '1 */3 * * *'
@@ -7,7 +7,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-6Svip120apk69-gitee_q8qsTAUA_cThxc1RBVUE
+    types: sync-age174
 jobs:
   repo-sync:
     env:
@@ -19,11 +19,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync 6Svip120apk69-gitee_q8qsTAUA_cThxc1RBVUE
+      - name: sync age174
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE.git"
+          source_repo: "https://github.com/age174/-.git"
           source_branch: "main"
           destination_branch: "master"
           github_token: ${{ secrets.PAT }}
