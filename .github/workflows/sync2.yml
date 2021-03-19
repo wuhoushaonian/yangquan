@@ -2,7 +2,7 @@
 name: sync-age174
 on:
   schedule:
-    - cron: '30 */6 * * *'
+    - cron: '10 3,7,10,13 * * *'
   workflow_dispatch:
   watch:
     types: started
